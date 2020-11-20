@@ -3,9 +3,10 @@ import { movies } from '../data';
 
 const Movies = () => {
   return (
-    <div>
-        {/*{code here}*/}
-    </div>
+   <div>
+     <h1>Movies Page</h1>
+      {movies.map((movie)=><div className="movie">Name: {movie.title}<br />Time:{movie.time}<br />Genres:<ul>{movie.genres.map((genre)=><li>{genre}</li>)}</ul></div>)}
+   </div>
   );
 };
 
